@@ -1,0 +1,142 @@
+<html>
+<head>
+	<title>Priyanka</title>
+	<link rel="stylesheet" href="style.css">
+	<link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+	<!-- CSS -->
+
+
+</head>
+<body>
+	
+<!-------banner-------->
+<!--<nav>
+	<ul>
+		<li><a href="#section1">FESTIVALS</a></li>
+		<li><a href="#section2">THREATS</a></li>
+		<li><a href="#section3">MEASURES</a></li>
+	</ul>
+</nav>-->
+<section id="section1">
+
+    <div class="container">
+    	<div class="outer">
+    		<div class="details">
+    			<h2>India - The Land of <span></span></h2>
+    			<p>India is a kaleidoscope of cultures that includes umpteen variations in food, clothing, language, music and religious beliefs. This colourful spread has been shaped by the long history and unique geography of this land. </p>
+    			<a href="http://trebeki.info/en/the-indian-culture-traditions-religions-festivals-music-dance-clothing-food-movies/">Know more</a>
+              
+    		</div>
+    	</div>
+    </div>
+   </section>
+  
+   <section id="section2">
+   	<div class="container1">
+   	 <h1>Impact of Festivals on Environment</h1>
+   	 <div class="row">
+   	 	<div class="col">
+   	 		<div class="feature-img">
+   	 			<img src="media/pic3.jpeg" width="100%" >
+   	 			<img  class= "play" src="media/play.png" onclick="playVideo('media/video1.mp4')">
+   	 		</div>
+   	 	</div>
+   	 	<div class="col">
+   	 		<div class="small-img-row">
+   	 			<div class="small-img">
+   	 				<img class="small" src="media/pic2.jpg">
+   	 				<img  class= " btn" src="media/play.png" onclick="playVideo('media/video1.mp4')">
+   	 			</div>
+   	 			<p>Diwali fright for animals</p>
+   	 		</div>
+   	 		<div class="small-img-row">
+   	 			<div class="small-img">
+   	 				<img  class="small" src="media/pic4.jpg">
+   	 				<img  class= " btn" src="media/play.png" onclick="playVideo('media/video1.mp4')">
+   	 			</div>
+   	 			<p>Pollution hits maximum after Diwali celebration</p>
+   	 		</div>
+   	 		<div class="small-img-row">
+   	 			<div class="small-img">
+   	 				<img  class="small" src="media/pic3.jpeg">
+   	 				<img  class= "btn" src="media/play.png" onclick="playVideo('media/video1.mp4')">
+   	 			</div>
+   	 			<p>Visarjan leaves Yamuna more polluted</p>
+   	 		</div>
+   	 	</div>
+   	 	<div class="video-player" id="video-player">
+   		<video width="100%" controls autoplay id="myVideo">
+   			<source src="media/video1.mp4" type="video/mp4">
+   		</video>
+   		<img class="close-btn" src="media/remove.png" onclick="stopVideo()">
+   	</div>
+   	 </div>	
+
+   	</div>
+   	
+
+   </section>
+
+   <section id="section3">
+   <div class="container2">
+     <div id="content1" class="content content--first">
+     	<img src="media/gc.jpg">
+
+     	<!--<h2 class="content-title1">Content1</h2>
+     	<p class="content-text">explore</p>-->
+     </div>
+     <div id="content2" class="content content--sec">
+     	<!--<figcaption>Let's go green this diwali.</figcaption>-->
+     	<img src="media/bestt1.jpg">
+    <!-- <h2 class="content-title1">Content2</h2>
+     	<p class="content-text">explore more</p>-->
+     </div>
+      <div id="content3" class="content content--three">
+      	<img src="media/call.jpg">
+     	<!--<h2 class="content-title">Content3</h2>
+     	<p class="content-text">explore</p>-->
+     </div>
+    <div id="content4" class="content content--four">
+    	<img src="media/dog.jpg">
+     	<!--<h2 class="content-title">Content4</h2>
+     	<p class="content-text">explore</p>-->
+     </div>
+      <div id="content5" class="content content--five">
+     	<!--<h2 class="content-title">Content5</h2>
+     	<p class="content-text">explore</p>-->
+     </div>
+     <div id="content6" class="content content--six">
+     	<!--<h2 class="content-title">Content6</h2>
+     	<p class="content-text">explore</p>-->
+     </div>
+     <div id="content6" class="content content--sev">
+     	<!--<h2 class="content-title">Content6</h2>
+     	<p class="content-text">explore</p>-->
+     </div>
+   </div>
+   </section>
+
+   
+   
+
+    <script>
+    	var video= document.getElementById("video-player");
+    	var myVideo=document.getElementById("myVideo");
+
+    	function stopVideo()
+    	{
+    		video.style.display="none";
+    	}
+
+    	function playVideo(file) {
+    		myVideo.src=file;
+    		video.style.display="block";
+    		
+    	}
+    </script>
+    
+   
+
+	
+</body>
+</html>	

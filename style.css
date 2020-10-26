@@ -1,0 +1,366 @@
+html{
+	scroll-behavior: smooth;
+}
+body{
+	margin:0;
+	padding:0;
+	font-family: Poppins;
+}
+nav{
+	width: 100%;
+	
+	background: rgb(4,0,6);
+background: linear-gradient(90deg, rgba(4,0,6,1) 0%, rgba(186,171,173,1) 100%);
+	overflow: hidden;
+	position: fixed;
+	top: 0;
+}
+ul{
+	padding: 0;
+	margin:0;
+	list-style: none;
+}
+li{
+	float: left;
+}
+a{
+	padding: 10px;
+	width: 100px;
+	display: block;
+	text-decoration: 	none;
+	color:white;
+	font-weight: 	bold;
+}
+#section1{
+	height: 700px;
+	
+	display: inline-block;
+	width: 100%;
+}
+#section2{
+	height: 810px;
+  background: rgb(255,255,255);
+   background: radial-gradient(circle, rgba(255,255,255,1) 0%, rgba(100,105,110,1) 72%);
+
+	display: inline-block;
+	width: 100%;
+}
+#section3{
+	height: 750px;
+	background-image: url("media/back4.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+	display: inline-block;
+	width: 100%;
+	margin:0;
+
+}
+.container{
+	position: absolute;
+	left:0;
+	top:0;
+	width: 100%;
+	height:100%;
+	background-size: cover;
+	background-repeat: no-repeat;
+	animation: slidy 16s ease infinite;
+}
+
+.outer{
+	position: absolute;
+	left: 0;
+	top:0;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0,0,0,0.5)
+}
+
+.details{
+	position: absolute;
+	top: 50%;
+	left:50%;
+	transform: translate(-50%,-50%);
+	
+	color: white;
+	
+	
+}
+.details h2{
+	padding: 0;
+	margin:0;
+	color:white;
+	text-shadow: 0 2px 0 rgba(0,0,0,0.5);
+	font-size: 45px;
+}
+
+.details p{
+	font-size: 16px;
+	line-height: 30px;
+}
+
+.details a{
+	padding: 10px 25px;
+	
+	text-decoration: none;
+	border-radius: 5px;
+	display: inline-block;
+	color: white;
+	background: rgb(131,58,180);
+background: linear-gradient(90deg, rgba(131,58,180,1) 0%, rgba(253,29,56,1) 100%, rgba(252,69,143,1) 100%);
+}
+
+span:before{
+	content:' ';
+	animation:animate infinite 16s;
+}
+@keyframes animate{
+	0%,100%{
+		content:'Festivals';
+	}
+	20%{
+		content:'Colors';
+	}
+	40%{
+		content:'Happiness';
+	}
+	60%{
+		content:'Culture';
+	}
+	80%{
+		content:'Diversity';
+	}
+	
+}
+@keyframes slidy{
+   0%,100%{
+    	background-image: url(media/firework.jpg);
+
+
+    }
+    20%{
+    	background-image: url(media/dussehra.jpg);
+    }
+    40%{
+    	background-image: url(media/durgapuja.jpg);
+    }
+    60%{
+    	background-image: url(media/navratri.jpg);
+    }
+    80%{
+    	background-image: url(media/ganeshpuja.jpg);
+    }
+}
+.container1 h1{
+	text-align: left;
+	padding: 40px 52px;
+	font-size: 44px;
+	color: white;
+}
+
+.row{
+	display: flex;
+	align-items: center;
+	flex-wrap: wrap;
+}
+.col{
+	flex-basis: 50%;
+	min-width: 250px;
+}
+
+.feature-img{
+	width: 83%;
+	margin:auto;
+	position: relative;
+	border-radius: 6px;
+	overflow: hidden;
+
+}
+
+.small-img-row{
+	display: flex;
+	background-color: rgba(0,0,0,0.5);
+	margin:15px 0;
+	align-items: center;
+	border-radius: 6px;
+	overflow: hidden;
+	width: 85%
+}
+
+.small-img{
+	position: relative;
+}
+.small{
+	width: 150px;
+	height: 100px;
+}
+.small-img-row p{
+	margin-left: 20px;
+}
+.play{
+	width:48px;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+	cursor: pointer;
+
+}
+.btn{
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+	cursor: pointer;
+	width:35px;
+
+}
+.video-player{
+	width: 60%;
+	position: absolute;
+	top: 170%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+	cursor: pointer;
+	display: none;
+
+}
+.close-btn{
+	position: absolute;
+	top: 10px;
+	right: 10px;
+	width: 30px;
+	cursor: pointer;
+}
+video:focus {
+	outline: none;
+}
+
+
+
+
+/*-----------------------------------------*/
+
+#content1 {
+	background-color: rgba(0,0,0,0.4);
+}
+
+#content2 {
+
+	background-color: rgba(0,0,0,0.4);
+}
+
+#content3 {
+	background-color: rgba(0,0,0,0.4);
+}
+
+#content4 {
+	background-color: rgba(0,0,0,0.4);
+}
+
+#content5 {
+	background-color: rgba(0,0,0,0.4);
+}
+#content6 {
+	background-color: rgba(0,0,0,0.4);
+}
+
+.content--sec img{
+	width: 100%;
+	height: auto;
+	-webkit-transition:0.3s;
+	transition: .3s ease-in-out;
+	-webkit-transform: scale(1);
+	transform: scale(1);
+
+}
+.content--sec:hover img{
+	
+	-webkit-transform: scale(0.9);
+	transform: scale(0.9);
+}
+.content--first img{
+	width: 100%;
+	height: auto;
+	-webkit-transition:0.3s;
+	transition: .3s ease-in-out;
+	-webkit-transform: scale(1);
+	transform: scale(1);
+
+}
+.content--first:hover img{
+	
+	-webkit-transform: scale(0.9);
+	transform: scale(0.9);
+}
+.content--four img{
+	width: 100%;
+	height: auto;
+	-webkit-transition:0.3s;
+	transition: .3s ease-in-out;
+	-webkit-transform: scale(1);
+	transform: scale(1);
+
+}
+.content--four:hover img{
+	
+	-webkit-transform: scale(0.9);
+	transform: scale(0.9);
+}
+.content--three img{
+	width: 100%;
+	height: auto;
+	-webkit-transition:0.3s;
+	transition: .3s ease-in-out;
+	-webkit-transform: scale(1);
+	transform: scale(1);
+
+}
+.content--three:hover img{
+	
+	-webkit-transform: scale(0.9);
+	transform: scale(0.9);
+}
+.content--sec h2{
+	position: absolute;
+	top:50%;
+	left: 50%;
+}
+.content--first{
+
+	width:50%;
+	height:50%;
+	float: left;
+}
+.content--sec{
+	width: 50%;
+	height: 100%;
+	float:right;
+}
+.content--three{
+	width:25%;
+	height: 25%;
+	float:left;
+}
+.content--four{
+	
+	width: 25%;
+	height:50%;
+	float:right;
+}
+.content--five{
+	width:12.5%;
+	height: 12.5%;
+	float: left;
+}
+.content--six{
+	height: 25%;
+	width: 12.5%;
+	float: right;
+}
+.content--sev{
+	height: 12.5%;
+	width: 12.5%;
+}
+.content{
+	display: flex;
+}
