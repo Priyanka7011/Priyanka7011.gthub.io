@@ -9,14 +9,7 @@
 </head>
 <body>
 	
-<!-------banner-------->
-<!--<nav>
-	<ul>
-		<li><a href="#section1">FESTIVALS</a></li>
-		<li><a href="#section2">THREATS</a></li>
-		<li><a href="#section3">MEASURES</a></li>
-	</ul>
-</nav>-->
+
 <section id="section1">
 
     <div class="container">
@@ -31,35 +24,38 @@
     </div>
    </section>
   
+
+
+
    <section id="section2">
    	<div class="container1">
    	 <h1>Impact of Festivals on Environment</h1>
    	 <div class="row">
    	 	<div class="col">
    	 		<div class="feature-img">
-   	 			<img src="media/pic3.jpeg" width="100%" >
-   	 			<img  class= "play" src="media/play.png" onclick="playVideo('media/video1.mp4')">
+   	 			<img id="pic" src="media/pic3.jpeg" width="100%" >
+   	 			<img  class= "play" src="media/play-button.png" onclick="playVideo('media/video2.mp4')">
    	 		</div>
    	 	</div>
    	 	<div class="col">
    	 		<div class="small-img-row">
    	 			<div class="small-img">
    	 				<img class="small" src="media/pic2.jpg">
-   	 				<img  class= " btn" src="media/play.png" onclick="playVideo('media/video1.mp4')">
+   	 				<img  class= " btn" src="media/play-button.png" onclick="playVideo('media/video3.mp4')">
    	 			</div>
    	 			<p>Diwali fright for animals</p>
    	 		</div>
    	 		<div class="small-img-row">
    	 			<div class="small-img">
    	 				<img  class="small" src="media/pic4.jpg">
-   	 				<img  class= " btn" src="media/play.png" onclick="playVideo('media/video1.mp4')">
+   	 				<img  class= " btn" src="media/play-button.png" onclick="playVideo('media/video1.mp4')">
    	 			</div>
    	 			<p>Pollution hits maximum after Diwali celebration</p>
    	 		</div>
    	 		<div class="small-img-row">
    	 			<div class="small-img">
    	 				<img  class="small" src="media/pic3.jpeg">
-   	 				<img  class= "btn" src="media/play.png" onclick="playVideo('media/video1.mp4')">
+   	 				<img  class= "btn" src="media/play-button.png" onclick="playVideo('media/video2.mp4')">
    	 			</div>
    	 			<p>Visarjan leaves Yamuna more polluted</p>
    	 		</div>
@@ -68,7 +64,7 @@
    		<video width="100%" controls autoplay id="myVideo">
    			<source src="media/video1.mp4" type="video/mp4">
    		</video>
-   		<img class="close-btn" src="media/remove.png" onclick="stopVideo()">
+   		<img class="close-btn" src="media/delete.png" onclick="stopVideo()">
    	</div>
    	 </div>	
 
@@ -77,42 +73,41 @@
 
    </section>
 
+   
+
+
    <section id="section3">
    <div class="container2">
-     <div id="content1" class="content content--first">
-     	<img src="media/gc.jpg">
-
-     	<!--<h2 class="content-title1">Content1</h2>
-     	<p class="content-text">explore</p>-->
-     </div>
-     <div id="content2" class="content content--sec">
-     	<!--<figcaption>Let's go green this diwali.</figcaption>-->
-     	<img src="media/bestt1.jpg">
-    <!-- <h2 class="content-title1">Content2</h2>
-     	<p class="content-text">explore more</p>-->
-     </div>
-      <div id="content3" class="content content--three">
-      	<img src="media/call.jpg">
-     	<!--<h2 class="content-title">Content3</h2>
-     	<p class="content-text">explore</p>-->
-     </div>
-    <div id="content4" class="content content--four">
-    	<img src="media/dog.jpg">
-     	<!--<h2 class="content-title">Content4</h2>
-     	<p class="content-text">explore</p>-->
-     </div>
-      <div id="content5" class="content content--five">
-     	<!--<h2 class="content-title">Content5</h2>
-     	<p class="content-text">explore</p>-->
-     </div>
-     <div id="content6" class="content content--six">
-     	<!--<h2 class="content-title">Content6</h2>
-     	<p class="content-text">explore</p>-->
-     </div>
-     <div id="content6" class="content content--sev">
-     	<!--<h2 class="content-title">Content6</h2>
-     	<p class="content-text">explore</p>-->
-     </div>
+    <div class="content content-1" >
+    	<img class="good-image" src="media/gccc3.jpg">
+    	<div class="text-box">
+    		<div class="text">Say NO to POP please!!Opt for eco-friendly idols</div>
+    	</div>
+    </div>
+    <div class="content content-2" >
+    	<img class="good-image" src="media/bestt1.jpg">
+    	<div class="text-box">
+    		<div class="text">Let's minimise the poisonous effects of crackers and maximise happiness with beautiful diyas and sky lanterns</div>
+    	</div>
+    </div>
+     <div class="content content-3" >
+    	<img class="good-image" src="media/call.jpg">
+    	<div class="text-box">
+    		<div class="text">Let's follow social distancing this festive season</div>
+    	</div>
+    </div>
+     <div class="content content-4" >
+    	<img class="good-image" src="media/dog.jpg">
+    	<div class="text-box">
+    		<div class="text">Help our furry friends have safe and happy festivites</div>
+    	</div>
+    </div>
+     <div class="content content-5" >
+    	
+    	<div class="title">
+    		<div class="text1">Let's pledge to go green and stop acting mean</div>
+    	</div>
+    </div>
    </div>
    </section>
 
@@ -122,15 +117,19 @@
     <script>
     	var video= document.getElementById("video-player");
     	var myVideo=document.getElementById("myVideo");
-
+        var myPic=document.getElementById("pic")
     	function stopVideo()
     	{
     		video.style.display="none";
+            myVideo.pause();
+    		myPic.style.display="block";
     	}
 
     	function playVideo(file) {
     		myVideo.src=file;
     		video.style.display="block";
+    		myPic.style.display="none";
+
     		
     	}
     </script>
